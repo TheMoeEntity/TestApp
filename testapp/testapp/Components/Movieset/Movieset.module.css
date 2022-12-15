@@ -8,13 +8,14 @@
 .search {
     height: 89px;
     font-size: 24px;
-    width: 90%;
+    width: 89%;
     margin:auto;
     margin-top: 63px;
     background-color: white;
 }
 .movies {
-    width: 91%;
+    width: 100%;
+    padding-left: 67px;
     margin: auto;
 }
 .search input {
@@ -25,7 +26,6 @@
     width: 100%;
     padding: 15px;
     display: block;
-    background:transparent;
     outline: none;
 }
 .set {
@@ -66,6 +66,16 @@
     color: white;
     font-weight: lighter;
 }
+@media screen and (max-width:1024px) {
+    .movies {
+        margin: 0;
+        float: right;
+        padding-left: 28px;
+    }
+    .search {
+        width: 92%;
+    }
+}
 @media screen and (max-width:375px) {
     .search {
         margin-top: 56px;
@@ -76,8 +86,11 @@
         height: 34px;
     }
     .movies {
-        /* width: 86%; */
-        margin: 0;
-        float: right;
+        padding-left: 28px;
+    }
+    .card {
+        margin: 13px;
     }
 }
+
+
