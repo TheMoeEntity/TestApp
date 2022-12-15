@@ -1,0 +1,82 @@
+.Movieset {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    font-family: 'DM Sans', sans-serif;
+
+}
+.search {
+    height: 89px;
+    font-size: 24px;
+    width: 90%;
+    margin:auto;
+    margin-top: 63px;
+    background-color: white;
+}
+.movies {
+    width: 91%;
+    margin: auto;
+}
+.search input {
+    border: none;
+    height: 54px;
+    margin-top: 10px;
+    border: 1px solid black;
+    width: 100%;
+    padding: 15px;
+    display: block;
+    outline: none;
+}
+.set {
+    margin-top: 48px;
+}
+.wrapper {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth !important;
+
+}
+.card {
+    position: relative;
+    flex: 30%;
+    margin: 10px;
+    background: transparent;
+    border-radius: 12px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    background-color: black;
+    min-width: 300px;
+    min-height: 300px;
+
+}
+.card:nth-child(1) {
+    margin-left: 0;
+}
+.card:last-child {
+    margin-right: 0;
+}
+.caption {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-weight: lighter;
+}
+@media screen and (max-width:375px) {
+    .search {
+        margin-top: 56px;
+        width: 85%;
+        font-size: 16px;
+    }
+    .search input {
+        height: 34px;
+    }
+    .movies {
+        /* width: 86%; */
+        margin: 0;
+        float: right;
+    }
+}

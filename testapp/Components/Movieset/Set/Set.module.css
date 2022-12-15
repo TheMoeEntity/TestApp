@@ -1,0 +1,65 @@
+.set {
+    margin-top: 48px;
+    background-color: white;
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+}
+.wrapper {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth !important;
+
+}
+.title {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'DM Sans', sans-serif;
+}
+.card {
+    position: relative;
+    flex: 30%;
+    margin: 10px;
+    background: transparent;
+    border-radius: 12px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    background-color: black;
+    min-width: 300px;
+    min-height: 300px;
+
+}
+.card:nth-child(1) {
+    margin-left: 0;
+}
+.card:last-child {
+    margin-right: 0;
+}
+.caption {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+@media screen and (max-width:375px) {
+    .set{
+        margin-top: 33px;
+    }
+    .card {
+        min-width: 200px;
+        min-height: 200px;
+    }
+
+}
+@media screen and (max-width:375px) {
+    .title, .caption {
+        font-size: 18px;
+    }
+}
